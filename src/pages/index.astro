@@ -9,7 +9,7 @@ import ProfileBento from "@/components/bento-cards/profile";
 import SpotifyBentoCard from "@/components/bento-cards/spotify";
 import SocialBentoCard from "@/components/bento-cards/socials";
 import TechBentoCard from "@/components/bento-cards/tech";
-import MediaBentoCard from "@/components/bento-cards/media";
+import MediaBentoCard from "@/components/bento-cards/arch";
 import ProjectBentoCard from "@/components/bento-cards/project";
 import ContactBentoCard from "@/components/bento-cards/contact";
 import PreviousPortfoliioCard from "@/components/bento-cards/previousPortfolio";
@@ -27,7 +27,7 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
     </div>
   </div>
   <div class="grid gap-8 md:grid-cols-2 mt-8">
-    <MediaBentoCard imgUrl={"/images/arch.png"} title={"I use Arch BTW"} />
+    <MediaBentoCard client:only />
     <TechBentoCard />
   </div>
   <div class="grid gap-8 md:grid-cols-2 mt-8">

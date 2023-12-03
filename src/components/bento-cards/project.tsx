@@ -13,12 +13,12 @@ const ProjectBentoCard = ({
   liveLink: string;
 }) => {
   return (
-    <CustomCard>
+    <CustomCard className="  relative">
       <div className=" ">
         <h1 className=" moranga-bold mb-3 text-xl">{title} </h1>
-        <p>{description}</p>
+        <p className=" mb-10">{description}</p>
 
-        <div className=" flex items-center space-x-3 mt-4">
+        <div className=" absolute bottom-5  flex items-center space-x-3 mt-4">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <Github />
           </a>

@@ -1,0 +1,66 @@
+.bars-container {
+  display: flex;
+  justify-content: space-between;
+  width: 20px;
+  height: 30px;
+}
+
+.bar {
+  width: 3px;
+  height: 100px;
+  height: 20px;
+  background-color: #1db954; /* Spotify green color */
+  border-radius: 100px; /* Rounded borders */
+}
+
+.bar:nth-child(1) {
+  animation: barAnimation1 0.5s infinite alternate;
+}
+
+.bar:nth-child(2) {
+  animation: barAnimation2 0.7s infinite alternate;
+}
+
+.bar:nth-child(3) {
+  animation: barAnimation3 0.6s infinite alternate;
+}
+
+.bar:nth-child(4) {
+  animation: barAnimation4 0.8s infinite alternate;
+}
+
+@keyframes barAnimation1 {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.2);
+  }
+}
+
+@keyframes barAnimation2 {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.5);
+  }
+}
+
+@keyframes barAnimation3 {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.8);
+  }
+}
+
+@keyframes barAnimation4 {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.3);
+  }
+}

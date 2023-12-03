@@ -1,0 +1,62 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+import Layout from "../layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+import { ArrowBigDown, MenuIcon, MoveUpRight } from "lucide-react";
+import CustomCard from "@/components/shared/custom-card";
+import ProfileBento from "@/components/bento-cards/profile";
+import SpotifyBentoCard from "@/components/bento-cards/spotify";
+import SocialBentoCard from "@/components/bento-cards/socials";
+import TechBentoCard from "@/components/bento-cards/tech";
+import MediaBentoCard from "@/components/bento-cards/media";
+import ProjectBentoCard from "@/components/bento-cards/project";
+import ContactBentoCard from "@/components/bento-cards/contact";
+import PreviousPortfoliioCard from "@/components/bento-cards/previousPortfolio";
+import ResumeCard from "@/components/bento-cards/resume";
+import AstroLogoCard from "@/components/bento-cards/astro-logo";
+---
+
+<Layout title="Pawan Tamada - Fullstack Developer">
+  <div class="grid gap-8 items-stretch md:grid-cols-2">
+    <ProfileBento />
+
+    <div class="grid grid-cols-2 gap-8">
+      <SocialBentoCard client:only />
+      <SpotifyBentoCard client:only />
+    </div>
+  </div>
+  <div class="grid gap-8 md:grid-cols-2 mt-8">
+    <MediaBentoCard imgUrl={"/images/arch.png"} title={"I use Arch BTW"} />
+    <TechBentoCard />
+  </div>
+  <div class="grid gap-8 md:grid-cols-2 mt-8">
+    <div class="flex flex-col gap-8">
+      <ProjectBentoCard
+        title="Threads Clone"
+        description="Meta's new app clone using Next.js 13, Supabase Postgres, shadcn UI, NextAuth.js and prisma."
+        liveLink="https://threads-meta.vercel.app/"
+        githubLink="https://github.com/pawan67/threads-clone"
+      />
+      <ProjectBentoCard
+        title="Fredit - A Reddit Clone"
+        description="A fullstack reddit clone created with Next JS 13, Typescript, Prisma, Next Auth, Tailwind CSS. Users can create account, create posts, comment on posts, upvote and downvote posts and comments. create communities, join communities, and much more."
+        liveLink="https://fredit.vercel.app/"
+        githubLink="https://github.com/pawan67/fredit"
+      />
+    </div>
+    <ContactBentoCard />
+  </div>
+  <div class="grid md:grid-cols-2 gap-8 mt-8">
+    <div class="grid grid-cols-2 gap-8">
+      <PreviousPortfoliioCard />
+      <ResumeCard />
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      <AstroLogoCard />
+      <MediaBentoCard imgUrl={"/images/pc.jpg"} title={"Personal Computer"} />
+    </div>
+  </div>
+</Layout>
+
+<div></div>

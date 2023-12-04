@@ -10,7 +10,7 @@ const PreviousPortfoliioCard = () => {
           target="_blank"
           rel="noopener noreferrer"
           className=" flex
-         items-center  justify-center bg-background p-5 rounded-2xl"
+         items-center hover:scale-110 transition-all  justify-center bg-background p-5 rounded-2xl"
         >
           <ExternalLink size={34} />
         </a>

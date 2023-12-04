@@ -19,7 +19,7 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
 
 <Layout title="Pawan Tamada - Fullstack Developer">
   <div class="grid gap-8 items-stretch md:grid-cols-2">
-    <ProfileBento />
+    <ProfileBento client:only />
 
     <div class="grid grid-cols-2 gap-8">
       <SocialBentoCard client:only />
@@ -28,17 +28,19 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
   </div>
   <div class="grid gap-8 md:grid-cols-2 mt-8">
     <MediaBentoCard client:only />
-    <TechBentoCard />
+    <TechBentoCard client:only />
   </div>
   <div class="grid gap-8 md:grid-cols-2 mt-8">
     <div class="flex flex-col gap-8">
       <ProjectBentoCard
+        client:only
         title="Threads Clone"
         description="Meta's new app clone using Next.js 13, Supabase Postgres, shadcn UI, NextAuth.js and prisma."
         liveLink="https://threads-meta.vercel.app/"
         githubLink="https://github.com/pawan67/threads-clone"
       />
       <ProjectBentoCard
+        client:only
         title="Fredit - A Reddit Clone"
         description="A fullstack reddit clone created with Next JS 13, Typescript, Prisma, Next Auth, Tailwind CSS. Users can create account, create posts, comment on posts, upvote and downvote posts and comments. create communities, join communities, and much more."
         liveLink="https://fredit.vercel.app/"
@@ -48,15 +50,20 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
 
     <div class="grid gap-8">
       <div class="grid grid-cols-2 gap-8">
-        <PreviousPortfoliioCard />
+        <PreviousPortfoliioCard client:only />
         <ResumeCard
+          client:only
           link="https://drive.google.com/file/d/103kJni5O2U4EIlPjpLbirpoKrxJozPv8/view?usp=sharing"
           title="Resume"
         />
       </div>
       <div class="grid grid-cols-2 gap-8">
-        <ResumeCard link="mailto:pawantamada8@gmail.com" title="Contact" />
-        <AstroLogoCard />
+        <ResumeCard
+          client:only
+          link="mailto:pawantamada8@gmail.com"
+          title="Contact"
+        />
+        <AstroLogoCard client:only />
       </div>
     </div>
   </div>

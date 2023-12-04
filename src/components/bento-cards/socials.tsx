@@ -9,7 +9,7 @@ const SocialsBentoCard = () => {
           href="https://x.com/pawan67_"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-background p-3 aspect-square flex items-center justify-center rounded-xl"
+          className=" bg-background p-3 hover:scale-110 transition-all aspect-square flex items-center justify-center rounded-xl"
         >
           <Twitter size={32} />
         </a>
@@ -17,7 +17,7 @@ const SocialsBentoCard = () => {
           href="mailto:pawantamada8@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-background p-3 aspect-square flex items-center justify-center rounded-xl"
+          className=" bg-background p-3 aspect-square flex items-center hover:scale-110 transition-all justify-center rounded-xl"
         >
           <AtSign size={32} />
         </a>
@@ -25,7 +25,7 @@ const SocialsBentoCard = () => {
           href="https://linkedin.com/in/pawan67"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-background p-3 aspect-square flex items-center justify-center rounded-xl"
+          className=" bg-background p-3 aspect-square hover:scale-110 transition-all flex items-center justify-center rounded-xl"
         >
           <Linkedin size={32} />
         </a>
@@ -33,7 +33,7 @@ const SocialsBentoCard = () => {
           href="https://github.com/pawan67"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-background p-3 aspect-square flex items-center justify-center rounded-xl"
+          className=" bg-background hover:scale-110 transition-all p-3 aspect-square flex items-center justify-center rounded-xl"
         >
           <GithubIcon size={32} />
         </a>

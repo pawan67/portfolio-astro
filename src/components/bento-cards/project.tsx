@@ -19,10 +19,20 @@ const ProjectBentoCard = ({
         <p className=" mb-10">{description}</p>
 
         <div className=" absolute bottom-5  flex items-center space-x-3 mt-4">
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <a
+            className=" hover:scale-110 transition-all"
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github />
           </a>
-          <a href={liveLink} target="_blank" rel="noopener noreferrer">
+          <a
+            href={liveLink}
+            className=" hover:scale-110 transition-all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ExternalLink />
           </a>
         </div>

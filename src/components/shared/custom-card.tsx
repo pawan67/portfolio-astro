@@ -23,16 +23,13 @@ const CustomCard = ({
         duration: 0.4,
         jitter: 0.1,
       }}
+      {...props}
+      className={cn(
+        " bg-secondary  h-full p-5 rounded-3xl  transition-all",
+        className
+      )}
     >
-      <div
-        {...props}
-        className={cn(
-          " bg-secondary  h-full p-5 rounded-3xl  transition-all",
-          className
-        )}
-      >
-        {children}
-      </div>
+      {children}
     </motion.div>
   );
 };

@@ -19,13 +19,15 @@ const MediaBentoCard = () => {
   return (
     <CustomCard
       // @ts-ignore
+      onClick={handleReloadClick}
+      // @ts-ignore
       style={{
         backgroundImage: `url(/images/screenshots/${randomNumber}.png)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="relative aspect-video  md:aspect-auto min-h-[150px]"
+      className="relative cursor-pointer aspect-video  md:aspect-auto min-h-[150px]"
     >
       <Button
         size="icon"

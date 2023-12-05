@@ -1,8 +1,9 @@
 import CustomCard from "../shared/custom-card";
+import ThemeToggle from "../theme-toggle";
 
 const ProfileBento = () => {
   return (
-    <CustomCard className=" ">
+    <CustomCard className=" relative ">
       <div>
         <img className=" w-24 rounded-full" src="/images/profile.jpg" alt="" />
       </div>
@@ -14,6 +15,9 @@ const ProfileBento = () => {
         with proficiency in React, Next.js, Node.js, Express.js, MongoDB, SQL
         and Tyepescript.🧑‍💻
       </p>
+      <div className=" absolute top-5 right-5">
+        <ThemeToggle />
+      </div>
     </CustomCard>
   );
 };

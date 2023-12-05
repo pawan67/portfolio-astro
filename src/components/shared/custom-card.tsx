@@ -21,13 +21,11 @@ const CustomCard = ({
       transition={{
         delay: 0.2,
         duration: 0.4,
-        jitter: 0.1,
+        jitter: 0.5,
+        ease: "easeInOut",
       }}
       {...props}
-      className={cn(
-        " bg-secondary  h-full p-5 rounded-3xl  transition-all",
-        className
-      )}
+      className={cn(" bg-secondary   h-full p-5 rounded-3xl  ", className)}
     >
       {children}
     </motion.div>

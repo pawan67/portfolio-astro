@@ -25,7 +25,10 @@ const CustomCard = ({
         ease: "easeInOut",
       }}
       {...props}
-      className={cn(" bg-secondary   h-full p-5 rounded-3xl  ", className)}
+      className={cn(
+        "   border bg-secondary     h-full p-5 rounded-3xl  ",
+        className
+      )}
     >
       {children}
     </motion.div>

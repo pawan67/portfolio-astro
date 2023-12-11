@@ -40,8 +40,8 @@ const SpotifyBentoCard = () => {
             src="/images/social/spotify.webp"
             alt="Spotify Logo"
           />
-        </div>
-        <div className=" rounded-b-xl absolute bg-gradient-to-t from-black p-3 to-transparent inset-x-0 bottom-0 ">
+        </div> 
+        <div className=" rounded-b-[22px] absolute bg-gradient-to-t from-black p-3 to-transparent inset-x-0 bottom-0 ">
           <div>
             {/* <div className=" flex items-center space-x-2">
             <AnimatedBars />

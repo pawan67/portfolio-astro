@@ -36,7 +36,7 @@ const MediaBentoCard = () => {
       >
         <RefreshCcw size={18} />
       </Button>
-      <p className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t text-white from-black to-transparent font-black text-sm rounded-b-2xl">
+      <p className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t text-white from-black to-transparent font-black text-sm rounded-b-[21px]">
         I use Arch btw
       </p>
     </CustomCard>

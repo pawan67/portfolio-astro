@@ -18,7 +18,7 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
 ---
 
 <Layout title="Pawan Tamada - Fullstack Developer">
-  <div class="grid gap-8 items-stretch md:grid-cols-2">
+  <div class="grid gap-8 items-stretch lg:grid-cols-2">
     <ProfileBento client:only />
 
     <div class="grid grid-cols-2 gap-8">
@@ -26,11 +26,11 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
       <SpotifyBentoCard client:only />
     </div>
   </div>
-  <div class="grid gap-8 md:grid-cols-2 mt-8">
+  <div class="grid gap-8 lg:grid-cols-2 mt-8">
     <MediaBentoCard client:only />
     <TechBentoCard client:only />
   </div>
-  <div class="grid gap-8 md:grid-cols-2 mt-8">
+  <div class="grid gap-8 lg:grid-cols-2 mt-8">
     <div class="flex flex-col gap-8">
       <ProjectBentoCard
         client:only
@@ -41,14 +41,21 @@ import AstroLogoCard from "@/components/bento-cards/astro-logo";
       />
       <ProjectBentoCard
         client:only
+        title="Buzznote - A Notion Clone"
+        description="The Connected workspace for your notes, tasks, wikis, and databases. created using Next js 13, Convex, Tailwind CSS"
+        liveLink="https://buzznote.vercel.app/"
+        githubLink="https://github.com/pawan67/buzznote"
+      />
+      <ProjectBentoCard
+        client:only
         title="Fredit - A Reddit Clone"
-        description="A fullstack reddit clone created with Next JS 13, Typescript, Prisma, Next Auth, Tailwind CSS. Users can create account, create posts, comment on posts, upvote and downvote posts and comments. create communities, join communities, and much more."
+        description="A fullstack reddit clone created with Next JS 13, Typescript, Prisma, Next Auth, Tailwind CSS. "
         liveLink="https://fredit.vercel.app/"
         githubLink="https://github.com/pawan67/fredit"
       />
     </div>
 
-    <div class="grid gap-8">
+    <div class="grid gap-8 aspect-square">
       <div class="grid grid-cols-2 gap-8">
         <PreviousPortfoliioCard client:only />
         <ResumeCard

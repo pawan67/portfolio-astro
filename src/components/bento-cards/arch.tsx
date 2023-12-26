@@ -27,7 +27,7 @@ const MediaBentoCard = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="relative cursor-pointer aspect-video  md:aspect-auto min-h-[150px]"
+      className="relative cursor-pointer   md:aspect-auto min-h-[250px] lg:min-h-full"
     >
       <Button
         size="icon"
